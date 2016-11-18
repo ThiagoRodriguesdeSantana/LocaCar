@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CadastrarCliente">
+   <children>
+      <HBox fx:id="hbox" prefHeight="48.0" prefWidth="523.0">
+         <children>
+            <Pane fx:id="pane" prefHeight="22.0" prefWidth="523.0">
+               <children>
+                  <Label fx:id="titulo" layoutX="216.0" layoutY="16.0" text="Cadastrar Cliente" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Pane fx:id="pane2" prefHeight="188.0" prefWidth="523.0">
+         <children>
+            <Separator layoutY="-3.0" prefHeight="5.0" prefWidth="523.0" />
+            <Label fx:id="codigo" layoutX="14.0" layoutY="14.0" text="Código" />
+            <Label fx:id="nome" layoutX="15.0" layoutY="41.0" text="Nome" />
+            <Label fx:id="cpf" layoutX="16.0" layoutY="68.0" text="CPF" />
+            <Label fx:id="cnh" layoutX="249.0" layoutY="68.0" text="CNH" />
+            <Label fx:id="telefone" layoutX="13.0" layoutY="96.0" text="Telefone" />
+            <TextField fx:id="txtCodigo" layoutX="78.0" layoutY="10.0" prefHeight="25.0" prefWidth="124.0" />
+            <TextField fx:id="txtNome" layoutX="78.0" layoutY="37.0" prefHeight="25.0" prefWidth="432.0" />
+            <TextField fx:id="txtCpf" layoutX="78.0" layoutY="64.0" />
+            <TextField fx:id="txtCnh" layoutX="285.0" layoutY="64.0" prefHeight="25.0" prefWidth="222.0" />
+            <TextField fx:id="txtTelefone" layoutX="78.0" layoutY="92.0" prefHeight="25.0" prefWidth="149.0" />
+            <Button fx:id="btnSair" layoutX="22.0" layoutY="125.0" mnemonicParsing="false" onAction="#Sair" prefHeight="25.0" prefWidth="124.0" text="Sair" />
+            <Button fx:id="btnCancelar" layoutX="249.0" layoutY="125.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="25.0" prefWidth="124.0" text="Cancelar" />
+            <Button fx:id="btnSalvar" layoutX="383.0" layoutY="125.0" mnemonicParsing="false" onAction="#Salvar" prefHeight="25.0" prefWidth="124.0" text="Salvar" />
+            <Separator layoutX="2.0" layoutY="162.0" prefHeight="5.0" prefWidth="523.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

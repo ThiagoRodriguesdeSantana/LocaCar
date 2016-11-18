@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CadastrarVeiculo">
+   <children>
+      <HBox fx:id="hbox" prefHeight="32.0" prefWidth="523.0">
+         <children>
+            <Pane fx:id="pane" prefHeight="15.0" prefWidth="524.0">
+               <children>
+                  <Label fx:id="Titulo" layoutX="192.0" layoutY="10.0" text="Cadastrar Veículo" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Pane fx:id="pane2" prefHeight="258.0" prefWidth="523.0">
+         <children>
+            <Label fx:id="codigo" layoutX="14.0" layoutY="14.0" text="Código" />
+            <Label fx:id="placa" layoutX="19.0" layoutY="58.0" prefHeight="17.0" prefWidth="41.0" text="Placa" />
+            <Label fx:id="chassis" layoutX="242.0" layoutY="57.0" text="Chassis" />
+            <Label fx:id="anoFab" layoutX="14.0" layoutY="96.0" text="Ano de Fabricação" />
+            <Label fx:id="cor" layoutX="327.0" layoutY="96.0" text="Cor" />
+            <Label fx:id="acessorio" layoutX="13.0" layoutY="164.0" text="Acessorios" />
+            <Label fx:id="maraca" layoutX="14.0" layoutY="130.0" text="Marca" />
+            <Label fx:id="modelo" layoutX="325.0" layoutY="130.0" text="Modelo" />
+            <Label fx:id="taxa" layoutX="326.0" layoutY="164.0" text="Taxa" />
+            <TextField fx:id="txtCodigo" layoutX="116.0" layoutY="10.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="txtPlaca" layoutX="116.0" layoutY="54.0" prefHeight="25.0" prefWidth="111.0" />
+            <TextField fx:id="txtChassis" layoutX="287.0" layoutY="53.0" prefHeight="25.0" prefWidth="226.0" />
+            <TextArea fx:id="txtListAcessorio" layoutX="11.0" layoutY="194.0" prefHeight="37.0" prefWidth="497.0" />
+            <TextField fx:id="txtTaxa" layoutX="379.0" layoutY="160.0" prefHeight="25.0" prefWidth="126.0" />
+            <DatePicker fx:id="dtaAnoFab" layoutX="116.0" layoutY="92.0" prefHeight="25.0" prefWidth="161.0" />
+            <ComboBox fx:id="cboCor" layoutX="381.0" layoutY="92.0" prefHeight="25.0" prefWidth="126.0" />
+            <ComboBox fx:id="cboMarca" layoutX="116.0" layoutY="126.0" prefHeight="25.0" prefWidth="161.0" />
+            <ComboBox fx:id="cboModelo" layoutX="381.0" layoutY="126.0" prefHeight="25.0" prefWidth="126.0" />
+            <Button fx:id="btnSalvar" layoutX="398.0" layoutY="241.0" mnemonicParsing="false" onAction="#Salvar" prefHeight="25.0" prefWidth="111.0" text="Salvar" />
+            <Button fx:id="btnCancelar" layoutX="269.0" layoutY="241.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="25.0" prefWidth="111.0" text="Cancelar" />
+            <Button fx:id="btnSair" layoutX="15.0" layoutY="241.0" mnemonicParsing="false" onAction="#Sair" prefHeight="25.0" prefWidth="111.0" text="Sair" />
+            <Separator layoutX="-2.0" layoutY="42.0" prefHeight="9.0" prefWidth="523.0" />
+            <Separator layoutY="272.0" prefHeight="3.0" prefWidth="523.0" />
+            <ComboBox fx:id="cboAcessorio" layoutX="116.0" layoutY="160.0" prefHeight="25.0" prefWidth="161.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
